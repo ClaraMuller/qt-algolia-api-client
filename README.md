@@ -1,0 +1,1 @@
+# qt-algolia-api-client
