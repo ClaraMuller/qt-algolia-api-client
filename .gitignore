@@ -1,3 +1,8 @@
+# Custom
+SearchStaticLib_autogen
+algolia-suggest
+algolia-suggest_autogen/
+
 # Prerequisites
 *.d
 
@@ -36,3 +41,4 @@ helloWorld/HelloWorld
 *CMakeCache.txt
 *CMakeFiles*
 *.cmake
+Makefile

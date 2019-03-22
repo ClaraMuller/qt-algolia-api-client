@@ -88,8 +88,8 @@ AlgoliaSuggest::~AlgoliaSuggest()
 
 void AlgoliaSuggest::initAlgolia()
 {
-    AlgoliaSearch algoliasearch("ARZ9VZDBVI", "4cf92b5e358f8093c5987084b93fa0fa");
-    index = algoliasearch.initIndex("getstarted_actors", networkManagerPtr);
+    AlgoliaSearch algoliasearch("30QT3ZUDR4", "07cd0c0d939f2153dc54e2b082b19f7e");
+    index = algoliasearch.initIndex("movies", networkManagerPtr);
     connect(index.get(), SIGNAL(searchResult(QJsonObject)), this, SLOT(searchResultReceived(QJsonObject)));
 }
 
