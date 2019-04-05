@@ -28,24 +28,28 @@ set(
         include/AlgoliaSearch/private/NetworkRequest.hpp
         include/AlgoliaSearch/private/NetworkResultPrivate.hpp
         include/AlgoliaSearch/private/QueryPrivate.hpp
-        include/AlgoliaSearch/private/SearchRequest.hpp )
+        include/AlgoliaSearch/private/SearchRequest.hpp
+    )
 
 set(
     PUBLIC_HEADERS
         include/AlgoliaSearch/Client.hpp
+        include/AlgoliaSearch/HttpResponse.hpp
         include/AlgoliaSearch/Index.hpp
         include/AlgoliaSearch/Macros.hpp
+        include/AlgoliaSearch/NetworkResult.hpp
         include/AlgoliaSearch/Query.hpp
-        include/AlgoliaSearch/NetworkResult.hpp )
+    )
 
 set(
     SOURCES
         src/Client.cpp
         src/Hosts.cpp
+        src/HttpResponse.cpp
         src/Index.cpp
-        src/Query.cpp
         src/NetworkRequest.cpp
         src/NetworkResult.cpp
+        src/Query.cpp
         src/SearchRequest.cpp )
 
 add_library(
