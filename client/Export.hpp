@@ -1,0 +1,42 @@
+
+#ifndef ALGOLIASEARCH_EXPORT_H
+#define ALGOLIASEARCH_EXPORT_H
+
+#ifdef ALGOLIASEARCH_STATIC_DEFINE
+#  define ALGOLIASEARCH_EXPORT
+#  define ALGOLIASEARCH_NO_EXPORT
+#else
+#  ifndef ALGOLIASEARCH_EXPORT
+#    ifdef algoliasearch_client_EXPORTS
+        /* We are building this library */
+#      define ALGOLIASEARCH_EXPORT 
+#    else
+        /* We are using this library */
+#      define ALGOLIASEARCH_EXPORT 
+#    endif
+#  endif
+
+#  ifndef ALGOLIASEARCH_NO_EXPORT
+#    define ALGOLIASEARCH_NO_EXPORT 
+#  endif
+#endif
+
+#ifndef ALGOLIASEARCH_DEPRECATED
+#  define ALGOLIASEARCH_DEPRECATED __attribute__ ((__deprecated__))
+#endif
+
+#ifndef ALGOLIASEARCH_DEPRECATED_EXPORT
+#  define ALGOLIASEARCH_DEPRECATED_EXPORT ALGOLIASEARCH_EXPORT ALGOLIASEARCH_DEPRECATED
+#endif
+
+#ifndef ALGOLIASEARCH_DEPRECATED_NO_EXPORT
+#  define ALGOLIASEARCH_DEPRECATED_NO_EXPORT ALGOLIASEARCH_NO_EXPORT ALGOLIASEARCH_DEPRECATED
+#endif
+
+#if 1 /* DEFINE_NO_DEPRECATED */
+#  ifndef ALGOLIASEARCH_NO_DEPRECATED
+#    define ALGOLIASEARCH_NO_DEPRECATED
+#  endif
+#endif
+
+#endif /* ALGOLIASEARCH_EXPORT_H */

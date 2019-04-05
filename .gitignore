@@ -1,7 +1,5 @@
 # Custom
-SearchStaticLib_autogen
-algolia-suggest
-algolia-suggest_autogen/
+build/
 
 # Prerequisites
 *.d
